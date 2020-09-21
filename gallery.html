@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>RkTapes.com - Infrastructure</title>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header Navigation & Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-10 lg:max-w-2xl lg:w-full">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+
+                <!-- Menu -->
+                <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                    <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
+                        <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                            <div class="flex items-center justify-between w-full md:w-auto">
+                                <a href="#" aria-label="Home">
+                                    <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Logo">
+                                </a>
+                                <div class="-mr-2 flex items-center md:hidden">
+                                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu"
+                                        aria-haspopup="true">
+                                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:ml-10 md:pr-4">
+                            <a href="/" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Home</a>
+                            <a href="/aboutus.html" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">About Us</a>
+                            <a href="/services.html" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Services</a>
+                            <a href="/gallery.html" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Gallery</a>
+
+                            <a href="/contact.html" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Contact Us</a>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <!--
+              Mobile menu, show/hide based on menu open state.
+      
+              Entering: "duration-150 ease-out"
+                From: "opacity-0 scale-95"
+                To: "opacity-100 scale-100"
+              Leaving: "duration-100 ease-in"
+                From: "opacity-100 scale-100"
+                To: "opacity-0 scale-95"
+            -->
+                <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                    <div class="rounded-lg shadow-md">
+                        <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                            <div class="px-5 pt-4 flex items-center justify-between">
+                                <div>
+                                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="">
+                                </div>
+                                <div class="-mr-2">
+                                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
+                                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="px-2 pt-2 pb-3">
+                                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Product</a>
+                                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Features</a>
+                                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Marketplace</a>
+                                <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Company</a>
+                            </div>
+                            <div>
+                                <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out" role="menuitem">
+                                    Log in
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-2 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h3 class="mb-12 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                    Infrastructure
+                </h3>
+
+
+                <!-- component -->
+
+                <head>
+                    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+                    <script src="https://kit.fontawesome.com/479346cc73.js" crossorigin="anonymous"></script>
+
+                </head>
+
+                <div class=" w-full text-blue-800 bg-white h-auto py-10">
+                    <div class="sm:flex content-center justify-center">
+                        <div class=" sm:w-2/4 w-3/4 mx-auto h-auto my-6 lg:mx-8 md:mx-4">
+                            <h3 class="text-center text-xl my-2"> <i class=" fas fa-circle text-4xl"></i> </h3>
+                            <p class=" text-justify mx-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vitae, nesciunt ipsa deleniti asperiores provident velit similique officiis ab reiciendis cupiditate illo incidunt aspernatur magnam dolorem quae. Facere, ex
+                                voluptatum.vitae, nesciunt ipsa deleniti asperiores provident velit similique officiis ab reiciendis cupiditate illo incidunt aspernatur magnam dolorem quae. Facere, ex voluptatum.</p>
+                        </div>
+
+
+                        <div class=" sm:w-2/4 w-3/4 mx-auto h-auto my-6 lg:mx-8 md:mx-4">
+                            <h3 class="text-center text-xl my-2"> <i class=" fas fa-building text-4xl"></i> </h3>
+                            <p class="text-justify mx-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime vitae, nesciunt ipsa deleniti asperiores provident velit similique officiis ab reiciendis cupiditate illo incidunt aspernatur magnam dolorem quae. Facere, ex
+                                voluptatum.vitae, nesciunt ipsa deleniti asperiores provident velit similique officiis ab reiciendis cupiditate illo incidunt aspernatur magnam dolorem quae. Facere, ex voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-evenly">
+                    <div class="max-w-xs rounded overflow-hidden shadow-lg my-2">
+                        <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-grey-darker text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 py-4">
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#winter</span>
+                        </div>
+                    </div>
+
+                    <div class="max-w-xs rounded overflow-hidden shadow-lg my-2">
+                        <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-grey-darker text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 py-4">
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#winter</span>
+                        </div>
+                    </div>
+
+                    <div class="max-w-xs rounded overflow-hidden shadow-lg my-2">
+                        <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                            <p class="text-grey-darker text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 py-4">
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#photography</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#travel</span>
+                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#winter</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-blue-100">
+        <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                Interested?
+                <br>
+                <span class="text-indigo-600">Contact our sales today for exclusive offer.</span>
+            </h2>
+            <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        Contact Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class='w-full text-center border-t border-grey p-4 pin-b text-gray-600'>
+        © 2020 RkTapes.com. All rights Reserved.
+    </footer>
+</body>
+
+</html>
